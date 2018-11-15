@@ -22,8 +22,6 @@ public class Group implements Cloneable {
 	@Column
 	private String code;
 
-	// khraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-	
 	@OneToMany // (fetch = FetchType.LAZY, cascade = { CascadeType.ALL }, orphanRemoval = true)
 	@JoinColumn(name = "id")
 	private Collection<Person> persons;
